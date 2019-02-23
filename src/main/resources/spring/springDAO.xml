@@ -8,7 +8,8 @@
     <context:component-scan base-package="com.quizApp.dao"/>
 
     <context:property-placeholder
-            location="classpath:jdbcTemplate/${environment}.properties"/>
+            location="classpath:jdbcTemplate/postgre.properties"/>
+            <!--location="classpath:jdbcTemplate/${environment}.properties"/>-->
 
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <property name="dataSource" ref="dataSource"/>
