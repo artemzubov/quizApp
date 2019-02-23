@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <beans:bean id="customeAuthenticationSuccessHandler"
+                class="com.quizApp.authHandler.CustomeAuthenticationSuccessHandler"/>
+    <http auto-config="true">
+        <intercept-url pattern="/quizApp/admin**" access='hasRole("ROLE_ADMIN")'/>
+        <intercept-url pattern="/quizApp/teacher**" access="hasRole('ROLE_TEACHER')"/>
+        <intercept-url pattern="/quizApp/student**" access="hasRole('ROLE_STUDENT')"/>
+        <access-denied-handler error-page="/quizApp/403"/>
+        <form-login
+                login-page="/quizApp/login"
+                login-processing-url="/quizApp/j_spring_security_check"
+                authentication-success-handler-ref="customeAuthenticationSuccessHandler"
+                authentication-failure-url="/quizApp/login?error"
+                username-parameter="login"
+                password-parameter="password"/>
+        <logout logout-success-url="/quizApp/login?logout"/>
+
+        <!-- enable csrf protection-->
+        <csrf/>
+    </http>
+
+    <beans:bean id ="passwordEncoder" class = "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider>
+            <password-encoder ref="passwordEncoder"/>
+            <jdbc-user-service id="jdbcUserService" data-source-ref="dataSource"
+                               users-by-username-query="
+                 select email as login,hash_password as password, enabled from users where email=?"
+                               authorities-by-username-query=
+                                       "select email as login, role from users where email = ?"/>
+        </authentication-provider>
+    </authentication-manager>
+</beans:beans>

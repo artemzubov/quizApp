@@ -1,0 +1,790 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    background-color: #EDEDED;
+    font-family: "PT Sans";
+    background-size: cover;
+}
+
+.bodyWithBg {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+input {
+    width: -webkit-fill-available;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 7px 7px;
+    margin-bottom: 20px;
+}
+
+button {
+    border: 1px solid #62c0d4;
+    background-color: #62c0d4;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: large;
+    outline: 0 !important;
+}
+
+button:hover {
+    background-color: rgba(98, 192, 212, 0.8);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+}
+
+.registerButton {
+    background-color: white;
+    border: 1px solid white;
+    color: #222
+}
+
+.registerButton:hover {
+    background-color: #b6b6b6;
+    border: 1px solid #b6b6b6;
+
+}
+
+.errorButton {
+    border: 1px solid #E71010;
+    background-color: #E71010;
+}
+
+.errorButton:hover {
+    background-color: rgba(213, 49, 37, 0.8);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.smallErrorButton:hover {
+    background-color: rgba(213, 49, 37, 0.8);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.loginContainer {
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    display: block;
+    height: auto;
+    margin-top: 25vh;
+    border: 2px solid #b6b6b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.signUpContainer {
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    display: block;
+    height: auto;
+    margin-top: 15vh;
+    border: 2px solid #b6b6b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.mainContainer, .questionContainer {
+    background-color: white;
+    width: inherit;
+    border: 2px solid #b6b6b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.singleTestContainer, .singleAnswerContainer {
+    border: 1px solid #999;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.topMenu {
+    background-color: #62c0d4;
+    height: 70px;
+    width: calc(100% + 16px);
+    display: flex;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.quizContainer {
+    background-color: white;
+    width: inherit;
+    border: 2px solid #b6b6b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.menuHeader {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.topMenuSvg {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.containerHeader {
+    font-size: x-large;
+}
+
+.containerLargerHeader {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.smallButton {
+    border: 1px solid #62c0d4;
+    background-color: #62c0d4;
+    border-radius: 5px;
+    padding: 3px 6px;
+    color: white;
+    font-size: small;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.smallErrorButton {
+    border: 1px solid #E71010;
+    background-color: #E71010;
+    border-radius: 5px;
+    padding: 3px 6px;
+    color: white;
+    font-size: small;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.smallGreenButton,.smallGreenButtonSolve :hover {
+    background-color: rgba(102, 200, 92, 0.7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.smallGreenButton, .smallGreenButtonSolve {
+    border: 1px solid #32CC4A;
+    background-color: #32CC4A;
+    border-radius: 5px;
+    padding: 3px 6px;
+    color: white;
+    font-size: small;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.greenButton {
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #32CC4A;
+    background-color: #32CC4A;
+}
+
+.greenButton:hover {
+    background-color: rgba(102, 200, 92, 0.7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.singleReqContainer {
+    border: 1px solid #999;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.checkboxWrap {
+    margin-right: 20px;
+    padding-top: 15px;
+}
+
+.checkboxWrapPadd {
+    margin-right: 20px;
+    padding-top: 18px;
+}
+
+.checkboxWrapPaddStu {
+    margin-right: 20px;
+    padding-top: 18px;
+}
+
+.inputWrap {
+    padding-top: 15px;
+    width: 100%;
+}
+
+.inputWrapAns {
+    width: 100%;
+}
+
+.subHeader {
+    font-size: larger;
+    font-style: italic;
+}
+
+.buttonContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputContainer {
+    margin-top: 50px;
+}
+
+.has-error {
+    color: red;
+}
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialogEdit {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.arrowBack {
+    vertical-align: sub;
+}
+
+.modalDialogEdit:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialogEdit > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.error {
+    color: #BB0600;
+    font-weight: 900;
+    text-align: center;
+}
+
+.logOutButton {
+    background-color: #62c0d4;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.8;
+    border: none;
+}
+
+.logOutButton:hover {
+    background-color: #72D0E4;
+    opacity: 1;
+}
+
+.signUpButton {
+    background-color: #62c0d4;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.8;
+    border: none;
+}
+
+.signUpButton:hover {
+    background-color: #72D0E4;
+    opacity: 1;
+}
+
+.signInButton {
+    background-color: #62c0d4;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.8;
+    border: none;
+}
+
+.welcomeBg {
+    background: url(../img/welcome.jpg) no-repeat no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.welcomeContainer {
+    width: 100vw;
+    margin-left: -8px;
+    color: #fff;
+    margin-top: -40px;
+    opacity: 0.95;
+}
+
+.welcomeContainerInfo {
+    text-align: center;
+    padding-top: 26vh;
+    width: 100vw;
+    font-size: x-large;
+}
+
+.welcomeContainerRegistered {
+    text-align: center;
+    padding-top: 10vh;
+    font-size: x-large;
+}
+
+.teacherPanelBg {
+    background-image: url(../img/teacher.png);
+    background-size: contain;
+    width: 300px;
+    height: 300px
+}
+
+.bigButton {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: xx-large !important;
+}
+
+.bigButton:hover {
+    box-shadow: 0 0 40px;
+    -webkit-box-shadow: 0 0 40px;
+    background-color: rgba(148, 251, 243, 0.9);
+}
+
+.signInButton:hover {
+    background-color: #72D0E4;
+    opacity: 1;
+}
+
+.logOutButton:hover {
+    background-color: #72D0E4;
+    opacity: 1;
+}
+
+.startButton {
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    background-color: #32CC4A;
+    border: 2px solid white;
+    padding: 0 1rem;
+}
+
+.has-error {
+    color: #BB0600;
+    border: 2px solid #BB0600;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(43, 43, 43);
+    padding: 10px;
+    background-color: #fdf6f6f6;
+}
+
+.startButton:hover {
+    background-color: #42DC5A;
+    opacity: 1;
+}
+
+.topicContainer {
+    text-shadow: 1px 1px 10px black, 1px 1px 10px black;
+    text-align: center;
+    color: #FFFFFF;
+    width: 25vw;
+    border-radius: 10px;
+    padding: 1px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.close:hover {
+    background: #62c0d4;
+}
+
+.deleteIcon:hover {
+    fill: #BB0600;
+}
+
+.deleteButton {
+    border: 1px solid #E71010;
+    background-color: #E71010;
+    border-radius: 5px;
+    padding: 0 0 0 0;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.deleteButton:hover {
+    background-color: rgba(213, 49, 37, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.transparentButton {
+    color: #fff;
+    background-color: #fff;
+    border: none;
+    padding: 0 0 0 0;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.transparentButton:hover {
+    color: #fff;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.languages {
+    float: left;
+}
+
+.welcomeContainerBg {
+    background-color: rgba(43, 43, 43, 0.2);
+    box-shadow: 0 0 80px rgb(43, 43, 43);
+    -webkit-box-shadow: 0 0 80px rgba(43, 43, 43, 0.4);
+    padding: 20px;
+    width: fit-content;
+    border-radius: 87px;
+}
+
+.deleteIconContainer {
+    margin-top: 17px;
+    margin-left: 15px;
+}
+
+.slogan {
+    font-size: x-large;
+}
+
+@media (max-width: 700px) {
+    .buttonContainer {
+        display: block;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    .loginContainer {
+        height: max-content;
+    }
+
+    .registerAsTutor {
+        font-size: 20px;
+    }
+}
+
+@media (orientation: portrait) {
+    .topMenu {
+        background-color: #62c0d4;
+        height: 100px;
+        width: calc(100% + 16px);
+        display: flex;
+        font-size: 40px;
+        margin-top: -8px;
+        margin-left: -8px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .smallGreenButtonSolve{
+        font-size: -webkit-xxx-large;
+    }
+
+    div.material-table table th {
+        font-size: larger !important;
+    }
+
+    .checkboxWrapPadd {
+        padding-top: 32px;
+    }
+
+    .twoButtons {
+        margin-top: -5px;
+
+    }
+
+    .logOutButton {
+        margin-top: 18px;
+    }
+
+    .languages {
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    button {
+        margin-bottom: 10px;
+        font-size: -webkit-xxx-large !important;
+        border-radius: 10px;
+    }
+
+    .welcomeContainerInfo {
+        font-size: -webkit-xxx-large;
+    }
+
+    .signInButton {
+        margin-top: 18px;
+    }
+
+    .signUpButton {
+        margin-top: 18px;
+    }
+
+    .signUpContainer {
+        width: auto;
+        margin-left: 0 !important;
+    }
+
+    .slogan {
+        font-size: -webkit-xxx-large;
+    }
+
+    .welcomeDivider {
+        margin-top: 40px !important;
+    }
+
+    .loginContainer {
+        height: max-content;
+    }
+
+    body {
+        font-size: -webkit-xxx-large;
+    }
+
+    .registerAsTutor {
+        font-size: 20px;
+    }
+
+    .bigButton {
+        font-size: -webkit-xxx-large !important;
+    }
+
+    .loginContainer {
+        width: auto;
+        margin-left: 0;
+        display: block;
+        height: fit-content;
+        margin-top: 15vh;
+    }
+
+    input {
+        line-height: 30px;
+        font-size: 30px;
+    }
+
+    .divider {
+        margin-top: 40px;
+    }
+
+    .menuHeader {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+        margin-top: 25px;
+        margin-left: -10px;
+    }
+
+    .topMenuSvg {
+        margin-top: 25px;
+    }
+
+    .topics {
+        display: block !important;
+        text-align: -webkit-center;
+        margin-top: 20px;
+    }
+
+    .logout {
+        margin-top: 10px !important;
+    }
+
+    .tabLabel {
+        margin-bottom: 15px;
+    }
+
+    .buttonContainer {
+        display: block !important;
+    }
+
+    .adminBody {
+        font-size: xx-large !important;
+    }
+
+    .loginName {
+        width: 30%;
+    }
+
+    .smallButton {
+        font-size: medium !important;
+    }
+
+    .smallGreenButton {
+        font-size: medium !important;
+
+    }
+
+    .deleteIcon {
+        margin-top: 10px;
+    }
+
+    .topicContainer {
+        width: 80vw;
+    }
+
+    .arrowBack {
+        width: 60px !important;
+        height: 60px !important;
+        vertical-align: sub;
+    }
+
+    .smallErrorButton {
+        font-size: medium !important;
+
+    }
+
+    .checkboxWrapPaddStu {
+        padding-top: 45px;
+    }
+
+    .statisticsDiv {
+        height: fit-content !important;
+    }
+
+    .datatableMain {
+        font-size: xx-large;
+    }
+
+    .dataTables_wrapper .no-footer {
+        overflow: auto;
+        width: auto !important;
+    }
+    .modalContainer{
+        width: 80vw;
+        height: 30vh;
+        margin-top: 0 !important;
+    }
+    .modalDialog{
+        padding-top: 30vh;
+    }
+    .nenado{
+        width: -webkit-fill-available;
+    }
+}
+
+@media (min-width: 1360px) {
+    .welcomeBg {
+        height: 99vh;
+    }
+
+    .welcomeContainer {
+        width: 98vw;
+    }
+
+    .welcomeContainerInfo {
+        padding-top: 15vh;
+    }
+
+}
